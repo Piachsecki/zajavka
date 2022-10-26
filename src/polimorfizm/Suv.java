@@ -11,6 +11,14 @@ public class Suv extends Car{
         this.height = height;
     }
 
+    @Override
+    public String toString() {
+        return "Suv{" +
+                "height=" + height +
+                ", color='" + color + '\'' +
+                "} " ;
+    }
+
     public Suv(String color, double height) {
         super(color);
         this.height = height;
