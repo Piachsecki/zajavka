@@ -3,18 +3,14 @@ package exceptions;
 public class Main {
     public static void main(String[] args) throws MyException {
         try{
-            throw new MyException();
-        }  catch (MyException ex){
-            System.out.println("Zlapalem wyjatek !");
-            System.out.println(
-                    "To nie moglo byc wykoanne : " +
-                     ex.getMessage()
-            );
-
-
+            printingEx1("throws");
+        }catch(MySubSubException e){
+            System.out.println("MySubSubException");
+        }catch(MySubException e){
+            System.out.println("MySubSubException");
+        }catch(MyException e) {
+            System.out.println("MySubSubException");
         }
-
-        printingEx1("tHrOW");
     }
 
     private static void printingEx1(String input) throws MyException {
