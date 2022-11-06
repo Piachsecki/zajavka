@@ -34,7 +34,7 @@ public class Main {
     private static void printingEx4(String input) throws MyException {
         System.out.println("printingEx4");
         if("throws".equalsIgnoreCase(input)){
-            throw new MyException();
+            throw new MySubException();
         }
         System.out.println("printingEx44");
     }
