@@ -14,7 +14,7 @@ public class Main {
         System.out.println(list);
         System.out.println();
         System.out.println(list.contains("Maciek"));
-        System.out.println(list.contains("Piotrek"));
+        list.contains("Piotrek");
         System.out.println();
         list.remove("Hania");
         list.remove(0);
